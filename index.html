@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>With You - Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background: #ffffff;
+        color: #1f1f1f;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: #0f0f0f;
+          color: #f2f2f2;
+        }
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 32px 20px 48px;
+      }
+      h1, h2 {
+        margin: 0 0 12px;
+      }
+      h2 {
+        margin-top: 28px;
+      }
+      p, li {
+        margin: 8px 0;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      .muted {
+        color: #666666;
+      }
+      @media (prefers-color-scheme: dark) {
+        .muted {
+          color: #aaaaaa;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Privacy Policy</h1>
+      <p class="muted">Last Updated: 2026-01-18</p>
+
+      <h2>Introduction</h2>
+      <p>
+        With You ("we", "our", or "us") respects your privacy and is committed to protecting
+        your personal information. This Privacy Policy explains how we collect, use, and share
+        information when you use our location tracking application.
+      </p>
+
+      <h2>Information We Collect</h2>
+      <p>We collect the following types of information:</p>
+      <ul>
+        <li>
+          Phone Number: We collect your phone number to identify you and enable location sharing with
+          your contacts. This is stored locally on your device and in our secure Firebase database.
+        </li>
+        <li>
+          Contacts (Optional): If you choose the "Pick from Contacts" option while adding a user, we
+          request Contacts permission to let you select a phone number from your phonebook. We do not
+          upload or store your entire contacts list. Only the phone number you select is used to send
+          a tracking request.
+        </li>
+        <li>
+          Location Data: We collect your device's location data (latitude, longitude, timestamp, and
+          accuracy) to provide location tracking services. Location data is collected in the background
+          and synced to our servers approximately every 1 hour to optimize battery life and data usage.
+          Location data is also cached locally on your device for offline access and faster performance.
+        </li>
+        <li>
+          Device Information: We may collect device information such as device model, operating system
+          version, and unique device identifiers to ensure compatibility and improve our services.
+        </li>
+        <li>
+          Usage Data: We may collect information about how you use the app, including which features you
+          use and how often you use them, to improve our services.
+        </li>
+        <li>
+          Cached Data: To improve performance and enable offline functionality, we store a local copy of
+          your location data, relationships, and user information on your device using Room Database.
+          This cached data is automatically synchronized with our servers and can be cleared at any time
+          through the app settings.
+        </li>
+      </ul>
+
+      <h2>How We Use Your Information</h2>
+      <ul>
+        <li>Provide location tracking services</li>
+        <li>Enable location sharing with your approved contacts</li>
+        <li>Send push notifications about tracking requests</li>
+        <li>Improve and maintain our services</li>
+        <li>Ensure the security and safety of our users</li>
+      </ul>
+
+      <h2>Data Storage and Security</h2>
+      <p>Your data is stored securely using multiple layers of protection:</p>
+      <ul>
+        <li>
+          Cloud Storage: Your data is stored in Firebase, a cloud service provided by Google, with encryption
+          in transit using HTTPS/TLS.
+        </li>
+        <li>
+          Local Storage: To improve performance and enable offline access, we use Room Database to cache your
+          data locally on your device. This local cache is encrypted and only accessible by the app. You can
+          clear this cache at any time by logging out or through app settings.
+        </li>
+        <li>
+          Security Measures: We implement appropriate technical and organizational measures including encryption,
+          authentication, and access controls to protect your personal information.
+        </li>
+        <li>
+          Data Minimization: We only collect and store essential data (phone number, location coordinates,
+          timestamp, accuracy) to minimize privacy risks.
+        </li>
+      </ul>
+      <p>
+        However, no method of transmission over the internet or electronic storage is 100% secure. While we
+        strive to use commercially acceptable means to protect your information, we cannot guarantee absolute
+        security.
+      </p>
+
+      <h2>Location Sharing</h2>
+      <p>
+        Location data is only shared with users who have been explicitly added and approved by you through
+        tracking requests. You have full control over who can track your location. You can revoke access at
+        any time.
+      </p>
+      <p>
+        Location Update Frequency: To optimize battery life and data usage, your location is updated to our
+        servers approximately every 1 hour. However, when someone is actively viewing your location on the
+        map screen, real-time updates are provided. This balance ensures accurate tracking while preserving
+        your device's battery life.
+      </p>
+      <p>
+        Cached Data: Location data is cached locally on your device for faster access and offline functionality.
+        This cache is automatically synchronized with our servers and is cleared when you log out.
+      </p>
+
+      <h2>Your Rights</h2>
+      <ul>
+        <li>Access your personal information stored in our system</li>
+        <li>Delete your account and data (both cloud and local cache)</li>
+        <li>Clear local cached data through app settings or logout</li>
+        <li>Revoke location sharing permissions at any time</li>
+        <li>Request information about how your data is used</li>
+        <li>Control location update frequency (background updates occur hourly)</li>
+        <li>Request a copy of your data in a portable format</li>
+      </ul>
+
+      <h2>Data Caching and Optimization</h2>
+      <ul>
+        <li>
+          Local Cache: Your location data, relationships, and user information are cached locally on your device
+          using Room Database.
+        </li>
+        <li>
+          Cache Purpose: This cache enables faster app performance, reduces network usage by 85-90%, and allows the
+          app to work offline.
+        </li>
+        <li>
+          Cache Duration: Cached location data is considered fresh for 5 minutes, and relationship data for 10 minutes.
+          After this time, data is refreshed from our servers when you use the app.
+        </li>
+        <li>
+          Cache Control: You can clear the local cache at any time by logging out of the app. The cache is also automatically
+          cleared when you delete your account.
+        </li>
+        <li>
+          Data Sync: The local cache is automatically synchronized with our servers to ensure data consistency.
+        </li>
+      </ul>
+
+      <h2>Contact Us</h2>
+      <p>
+        If you have questions about this Privacy Policy, please contact us through the app or email us at
+        support@withyou.app
+      </p>
+
+      <p><strong>By using With You, you agree to this Privacy Policy.</strong></p>
+    </main>
+  </body>
+</html>
