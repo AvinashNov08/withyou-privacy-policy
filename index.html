@@ -64,8 +64,9 @@
       <p>We collect the following types of information:</p>
       <ul>
         <li>
-          Phone Number: We collect your phone number to identify you and enable location sharing with
-          your contacts. This is stored locally on your device and in our secure Firebase database.
+          Phone Number (provided by you): You enter your phone number manually to identify your
+          account and enable location sharing. We do not read your phone number from your device or
+          SIM, and we do not request phone-state or phone-number permissions.
         </li>
         <li>
           Contacts (Optional): If you choose the "Pick from Contacts" option while adding a user, we
@@ -74,10 +75,11 @@
           a tracking request.
         </li>
         <li>
-          Location Data: We collect your device's location data (latitude, longitude, timestamp, and
-          accuracy) to provide location tracking services. Location data is collected in the background
-          and synced to our servers approximately every 1 hour to optimize battery life and data usage.
-          Location data is also cached locally on your device for offline access and faster performance.
+          Location Data (Foreground/Background): We collect your device's location data (latitude,
+          longitude, timestamp, and accuracy) while location sharing is enabled. Foreground updates use
+          a foreground service, and background updates allow periodic sync (about every 1 hour) when the
+          app is not in use. Location data is also cached locally on your device for offline access and
+          faster performance.
         </li>
         <li>
           Device Information: We may collect device information such as device model, operating system
@@ -136,6 +138,11 @@
         Location data is only shared with users who have been explicitly added and approved by you through
         tracking requests. You have full control over who can track your location. You can revoke access at
         any time.
+      </p>
+      <p>
+        Permissions: Location sharing uses precise/approximate location permissions, and background location
+        is used for updates when the app is not in use. Contacts permission is optional and only used for the
+        contact picker. We do not request phone-state or phone-number permissions.
       </p>
       <p>
         Location Update Frequency: To optimize battery life and data usage, your location is updated to our
