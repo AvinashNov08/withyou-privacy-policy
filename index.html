@@ -51,7 +51,7 @@
   <body>
     <main class="container">
       <h1>Privacy Policy</h1>
-      <p class="muted">Last Updated: 2026-01-18</p>
+      <p class="muted">Last Updated: 2026-01-27</p>
 
       <h2>Introduction</h2>
       <p>
@@ -66,7 +66,8 @@
         <li>
           Phone Number (provided by you): You enter your phone number manually to identify your
           account and enable location sharing. We do not read your phone number from your device or
-          SIM, and we do not request phone-state or phone-number permissions.
+          SIM, we do not request phone-state or phone-number permissions, and we do not use OTP/SMS
+          verification.
         </li>
         <li>
           Contacts (Optional): If you choose the "Pick from Contacts" option while adding a user, we
@@ -77,9 +78,10 @@
         <li>
           Location Data (Foreground/Background): We collect your device's location data (latitude,
           longitude, timestamp, and accuracy) while location sharing is enabled. Foreground updates use
-          a foreground service, and background updates allow periodic sync (about every 1 hour) when the
-          app is not in use. Location data is also cached locally on your device for offline access and
-          faster performance.
+          a foreground service with a persistent notification, and background updates allow periodic sync
+          (about every 1 hour) when the app is not in use. When a trusted contact requests a refresh, the
+          app may send a one-time location update if sharing is enabled. Location data is also cached
+          locally on your device for offline access and faster performance.
         </li>
         <li>
           Device Information: We may collect device information such as device model, operating system
@@ -115,12 +117,12 @@
         </li>
         <li>
           Local Storage: To improve performance and enable offline access, we use Room Database to cache your
-          data locally on your device. This local cache is encrypted and only accessible by the app. You can
-          clear this cache at any time by logging out or through app settings.
+          data locally on your device. This local cache is only accessible by the app. You can clear this
+          cache at any time by logging out or through app settings.
         </li>
         <li>
-          Security Measures: We implement appropriate technical and organizational measures including encryption,
-          authentication, and access controls to protect your personal information.
+          Security Measures: We implement appropriate technical and organizational measures, including encrypted
+          connections (HTTPS/TLS), to protect your personal information.
         </li>
         <li>
           Data Minimization: We only collect and store essential data (phone number, location coordinates,
@@ -146,9 +148,9 @@
       </p>
       <p>
         Location Update Frequency: To optimize battery life and data usage, your location is updated to our
-        servers approximately every 1 hour. However, when someone is actively viewing your location on the
-        map screen, real-time updates are provided. This balance ensures accurate tracking while preserving
-        your device's battery life.
+        servers approximately every 1 hour. When someone requests a refresh from the map screen, the app uses
+        a short real-time window (about 10 seconds) to try to capture a fresh location without changing the
+        hourly schedule.
       </p>
       <p>
         Cached Data: Location data is cached locally on your device for faster access and offline functionality.
@@ -192,7 +194,7 @@
       <h2>Contact Us</h2>
       <p>
         If you have questions about this Privacy Policy, please contact us through the app or email us at
-        support@withyou.app
+        avinash_nov08@hotmail.com
       </p>
 
       <p><strong>By using With You, you agree to this Privacy Policy.</strong></p>
