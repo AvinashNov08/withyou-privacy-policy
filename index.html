@@ -81,7 +81,8 @@
           a foreground service with a persistent notification, and background updates allow periodic sync
           (about every 1 hour) when the app is not in use. When a trusted contact requests a refresh, the
           app may send a one-time location update if sharing is enabled. Location data is also cached
-          locally on your device for offline access and faster performance.
+          locally on your device for offline access and faster performance. Offline map history is stored
+          locally for up to 30 days and is not uploaded.
         </li>
         <li>
           Device Information: We may collect device information such as device model, operating system
@@ -93,9 +94,10 @@
         </li>
         <li>
           Cached Data: To improve performance and enable offline functionality, we store a local copy of
-          your location data, relationships, and user information on your device using Room Database.
-          This cached data is automatically synchronized with our servers and can be cleared at any time
-          through the app settings.
+          your location data, relationships, and user information on your device using Room Database. We
+          also store offline map history for up to 30 days on your device only. This cached data is
+          automatically synchronized with our servers (except the offline map history) and can be cleared
+          at any time through the app settings.
         </li>
       </ul>
 
@@ -154,7 +156,8 @@
       </p>
       <p>
         Cached Data: Location data is cached locally on your device for faster access and offline functionality.
-        This cache is automatically synchronized with our servers and is cleared when you log out.
+        Offline map history is stored locally for up to 30 days. Local cache is automatically synchronized with
+        our servers (except offline map history) and is cleared when you log out.
       </p>
 
       <h2>Your Rights</h2>
@@ -172,7 +175,7 @@
       <ul>
         <li>
           Local Cache: Your location data, relationships, and user information are cached locally on your device
-          using Room Database.
+          using Room Database. Offline map history is stored locally for up to 30 days and is not uploaded.
         </li>
         <li>
           Cache Purpose: This cache enables faster app performance, reduces network usage by 85-90%, and allows the
